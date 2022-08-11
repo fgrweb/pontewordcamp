@@ -65,7 +65,7 @@ class Ponte_WordCamp_Updater {
 	 * @return void
 	 */
 	public function fgr_check_update() {
-		add_action( 'pre_set_site_transient_update_plugins', array( $this, 'fgr_check_transient' ), 10, 1 );
+		add_filter( 'pre_set_site_transient_update_plugins', array( $this, 'fgr_check_transient' ), 10, 1 );
 		add_filter( 'http_request_args', array( $this, 'fgr_set_header_token' ), 10, 2 );
 		add_filter( 'plugins_api', array( $this, 'fgr_plugin_popup' ), 10, 3 );
 		add_filter( 'upgrader_post_install', array( $this, 'fgr_after_install' ), 10, 3 );

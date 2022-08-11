@@ -10,7 +10,7 @@
  * Plugin Name:       WordCamp Pontevedra 2022
  * Plugin URI:        https://fgrweb.es/
  * Description:       Plugin demo para WordCamp Pontevedra 2022.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Fernando Garcia Rebolledo
  * Author URI:        https://fgrweb.es
  * License:           GPL-2.0+
