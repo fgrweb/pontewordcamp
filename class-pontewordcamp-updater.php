@@ -162,7 +162,7 @@ class Ponte_WordCamp_Updater {
 	 */
 	public function fgr_set_header_token( $args, $url ) {
 		$parse_url = wp_parse_url( $url );
-		if ( 'api.github.com' !== $parse_url['host'] && isset( $parse_url['query'] ) ) {
+		if ( 'api.github.com' === $parse_url['host'] && isset( $parse_url['query'] ) ) {
 			parse_str( $parse_url['query'], $query );
 			if ( isset( $query['access_token'] ) && $query['access_token'] ) {
 				$args['headers']['Authorization'] = 'token ' . $query['access_token'];
